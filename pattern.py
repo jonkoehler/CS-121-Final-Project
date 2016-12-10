@@ -14,7 +14,6 @@ BLUE_PIN  = 24
 #The value by which the color changes with each loop
 STEPS     = 0.1
 
-
 bright = 255        #highest value the lights can be set to
 r = 255.0           #initial values of r, g, and b
 g = 0.0
@@ -38,7 +37,7 @@ def setLights(pin, brightness):
 
 #starts the loop
 while True:
-                #fades red to off
+              	#fades red to off
 		if r <= 255 and b == 0 and g == 0 and r != 0:              
 			r = updateColor(r, -STEPS)
 			setLights(RED_PIN, r)
